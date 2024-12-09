@@ -1,19 +1,19 @@
 ;----Labels----
-INIDISP  = $2100
-OBJSEL   = $2101
-OAMADDL  = $2102
+INIDISP  = $2100	;inital setting for screen
+OBJSEL   = $2101	;object size & object data area
+OAMADDL  = $2102	;address for acessing OAM
 OAMADDH  = $2103
-OAMDATA  = $2104
-VMAINC   = $2114
-VMADDL   = $2116
+OAMDATA  = $2104	;data for OAM write
+VMAINC   = $2114	;VRAM address increment value designation
+VMADDL   = $2116	;address for VRAM read and write
 VMADDH   = $2117
-VMDATAL  = $2118
-VMDATAH  = $2119
-CGADD    = $2121
-CGDATA   = $2122
-TM       = $212c
-NMITIMEN = $4200
-RDNMI    = $4210
+VMDATAL  = $2118	;data for VRAM write
+VMDATAH  = $2119	;data for VRAM write
+CGADD    = $2121	;address for CGRAM read and write
+CGDATA   = $2122	;data for CGRAM write
+TM       = $212c	;main screen designation
+NMITIMEN = $4200	;enable flag for v-blank
+RDNMI    = $4210	;read the NMI flag status
 
 ;----Assembler Directives----
 .p816
